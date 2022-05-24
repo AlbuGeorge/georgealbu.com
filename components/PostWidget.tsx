@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { getRecentPosts, getSimilarPosts } from '../services'
 
 const PostWidget = ({ categories, slug }) => {
-  const [realatedPosts, setRelatedPosts] = useState([])
+  const [relatedPosts, setRelatedPosts] = useState([])
 
   useEffect(() => {
     if (slug) {
@@ -19,7 +19,7 @@ const PostWidget = ({ categories, slug }) => {
     }
   }, [slug])
 
-  console.log(realatedPosts)
+  console.log(relatedPosts)
 
   return (
     <div className="mb-8 rounded-lg bg-white p-8 pb-12 shadow-lg">
