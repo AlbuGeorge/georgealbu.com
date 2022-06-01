@@ -62,7 +62,7 @@ const PostDetail = ({ post }) => {
 
   return (
     <>
-      <div className="mb-8 rounded-lg bg-white pb-12 shadow-lg lg:p-8">
+      <div className="mb-8 rounded-lg bg-white pb-12 shadow-lg dark:bg-slate-900 lg:p-8">
         <div className="relative mb-6 overflow-hidden shadow-md">
           <img
             src={post.featuredImage.url}
@@ -72,7 +72,7 @@ const PostDetail = ({ post }) => {
         </div>
         <div className="px-4 lg:px-0">
           <div className="mb-8 flex w-full items-center">
-            <div className="mr-8 hidden items-center items-center justify-center md:flex lg:mb-0 lg:w-auto">
+            <div className="mr-8 hidden items-center justify-center md:flex lg:mb-0 lg:w-auto">
               <img
                 alt={post.author.name}
                 height="30px"
@@ -80,11 +80,11 @@ const PostDetail = ({ post }) => {
                 className="rounded-full align-middle"
                 src={post.author.photo.url}
               />
-              <p className="ml-2 inline align-middle text-lg font-medium text-gray-700">
+              <p className="ml-2 inline align-middle text-lg font-medium text-gray-700 dark:text-white">
                 {post.author.name}
               </p>
             </div>
-            <div className="font-medium text-gray-700">
+            <div className="font-medium text-gray-700 dark:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="mr-2 inline h-6 w-6 text-pink-500"

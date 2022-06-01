@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 import { getCategories } from '../services'
+import DarkToggle from './DarkToggle'
 
 const Header = () => {
   const [categories, setCategories] = useState([])
@@ -30,6 +31,7 @@ const Header = () => {
               </span>
             </Link>
           ))}
+          <DarkToggle />
         </div>
       </div>
     </div>

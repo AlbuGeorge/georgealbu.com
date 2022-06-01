@@ -5,7 +5,7 @@ import Link from 'next/link'
 const PostCard = ({ post }) => {
   console.log(post)
   return (
-    <div className="mb-8 rounded-lg bg-white p-0 pb-12 shadow-lg lg:p-8">
+    <div className="mb-8 rounded-lg bg-white p-0 pb-12 shadow-lg dark:bg-slate-900 lg:p-8">
       <div className="relative mb-6 overflow-hidden pb-80 shadow-md">
         <img
           src={post.featuredImage.url}
@@ -25,11 +25,11 @@ const PostCard = ({ post }) => {
             height="40px"
             className="rounded-full align-middle"
           />
-          <p className="ml-2 inline align-middle text-lg text-gray-700">
+          <p className="ml-2 inline align-middle text-lg text-gray-700 dark:text-white">
             {post.author.name}
           </p>
         </div>
-        <div className="font-medium text-gray-700">
+        <div className="font-medium text-gray-700 dark:text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="mr-2 inline h-6 w-6 text-pink-500"
@@ -47,7 +47,7 @@ const PostCard = ({ post }) => {
           <span>{moment(post.createdAt).format('DD MMMM YYYY')}</span>
         </div>
       </div>
-      <p className="mb-8 px-4 text-center text-lg font-normal text-gray-700 lg:px-20">
+      <p className="mb-8 px-4 text-center text-lg font-normal text-gray-700 dark:text-white lg:px-20">
         {post.excerpt}
       </p>
       <div className="text-center">
