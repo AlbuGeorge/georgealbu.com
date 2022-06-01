@@ -9,6 +9,7 @@ import {
   Comments,
   CommentsForm,
   Loader,
+  ScrollToTop,
 } from '../../components'
 import { getPosts, getPostDetails } from '../../services'
 
@@ -40,6 +41,7 @@ const PostDetails = ({ post }) => {
           </div>
         </div>
       </div>
+      <ScrollToTop />
     </>
   )
 }
