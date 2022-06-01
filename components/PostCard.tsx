@@ -1,6 +1,7 @@
 import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
+import { BiCalendarAlt } from 'react-icons/bi'
 
 const PostCard = ({ post }) => {
   console.log(post)
@@ -29,22 +30,11 @@ const PostCard = ({ post }) => {
             {post.author.name}
           </p>
         </div>
-        <div className="font-medium text-gray-700 dark:text-white">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="mr-2 inline h-6 w-6 text-pink-500"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-            />
-          </svg>
-          <span>{moment(post.createdAt).format('DD MMMM YYYY')}</span>
+        <div className="flex font-medium text-gray-700 dark:text-white">
+          <BiCalendarAlt size={24} color="#f06fc9" />
+          <span className="ml-1">
+            {moment(post.createdAt).format('DD MMMM YYYY')}
+          </span>
         </div>
       </div>
       <p className="mb-8 px-4 text-center text-lg font-normal text-gray-700 dark:text-white lg:px-20">
