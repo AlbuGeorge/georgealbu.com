@@ -13,7 +13,7 @@ const Categories = () => {
   }, [])
 
   return (
-    <div className="mb-8 rounded-lg bg-white p-8 pb-12 shadow-lg dark:bg-slate-900 dark:text-white">
+    <div className="mb-8 rounded-lg bg-white p-8 pb-12 shadow-lg dark:bg-zinc-800 dark:text-white">
       <h3 className="mb-8 border-b pb-4 text-xl font-semibold">Categories</h3>
       {categories.map((category, index) => (
         <Link key={index} href={`/category/${category.slug}`}>
