@@ -23,18 +23,19 @@ const Header = () => {
             </span>
           </Link>
         </div>
-        <Link href="https://github.com/AlbuGeorge">
-          <span className="mt-2 ml-4 cursor-pointer align-middle font-semibold text-zinc-900 hover:text-gray-100 dark:text-white md:float-right">
-            <BsGithub size={24} />
-          </span>
-        </Link>
-        <Link href="https://www.linkedin.com/in/georgealbu24/">
-          <span className="mt-2 ml-4 cursor-pointer align-middle font-semibold text-zinc-900 hover:text-gray-100 dark:text-white md:float-right">
-            <BsLinkedin size={24} />
-          </span>
-        </Link>
-        <DarkToggle />
-
+        <div className="hidden md:float-left md:contents">
+          <Link href="https://github.com/AlbuGeorge">
+            <span className="mt-2 ml-4 cursor-pointer align-middle font-semibold text-zinc-900 hover:text-gray-100 dark:text-white md:float-right">
+              <BsGithub size={24} />
+            </span>
+          </Link>
+          <Link href="https://www.linkedin.com/in/georgealbu24/">
+            <span className="mt-2 ml-4 cursor-pointer align-middle font-semibold text-zinc-900 hover:text-gray-100 dark:text-white md:float-right">
+              <BsLinkedin size={24} />
+            </span>
+          </Link>
+          <DarkToggle />
+        </div>
         <div className="hidden md:float-left md:contents">
           {categories.map((category) => (
             <Link key={category.slug} href={`/category/${category.slug}`}>

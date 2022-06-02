@@ -30,7 +30,7 @@ const PostCard = ({ post }) => {
             {post.author.name}
           </p>
         </div>
-        <div className="flex font-medium text-gray-700 dark:text-white">
+        <div className="mt-6 flex items-center justify-center font-medium text-gray-700 dark:text-white lg:mt-0">
           <BiCalendarAlt size={24} color="#f06fc9" />
           <span className="ml-1">
             {moment(post.createdAt).format('DD MMMM YYYY')}
