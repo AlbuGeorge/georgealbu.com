@@ -1,22 +1,56 @@
 import React from 'react'
+import { BsArrowRightShort } from 'react-icons/bs'
 
 const Hero = () => {
   return (
     <>
-      <div className="container mx-auto mt-10 mb-8 px-10">
-        <div className="flex justify-between">
-          <h2 className="flex flex-col justify-center text-4xl font-medium">
-            Helping people make the world a better place through quality
-            software.
-            <button
-              href={'/contact'}
-              className="inline-flex transform items-center rounded-md bg-white p-2 px-4 text-sm font-medium text-black shadow-sm transition duration-500 hover:-translate-y-1 hover:transition-all hover:delay-75 hover:ease-in-out focus:outline-none focus:ring-blue-500  dark:bg-zinc-800 dark:text-white"
-            >
-              Contact
-            </button>
-          </h2>
-          <img src="/bg1.png" alt="" width={500} />
+      <div className="relative overflow-hidden">
+        <div className="mx-auto max-w-7xl">
+          <div className="relative z-10 pb-8  sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
+            <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+              <div className="sm:text-center lg:text-left">
+                <h2 className="block text-2xl font-extrabold tracking-tight text-indigo-600 lg:ml-2 xl:inline">
+                  Hi there!, I'm
+                </h2>{' '}
+                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-8xl">
+                  <span className="block xl:inline">George Albu</span>
+                </h1>
+                <h2 className="mt-3 text-xl font-extrabold text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-8 md:text-3xl lg:mx-0">
+                  Self-taught{' '}
+                  <span className="text-black dark:text-white">
+                    Frontend Developer
+                  </span>{' '}
+                  <br />
+                  School-taught Systems Engineer
+                </h2>
+                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                  <div className="rounded-md shadow">
+                    <a
+                      href="#"
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white dark:bg-white dark:text-black md:py-2 md:px-10 md:text-lg"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                </div>
+                <div className="mt-36 flex flex-auto cursor-pointer md:mt-64">
+                  <p className="text-lg">Learn more about George</p>
+                  <BsArrowRightShort
+                    className="ml-4 hover:ml-4"
+                    size={'30px'}
+                  />
+                </div>
+              </div>
+            </main>
+          </div>
         </div>
+        {/* <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <img
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
+            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+            alt=""
+          />
+        </div> */}
       </div>
     </>
   )
