@@ -1,41 +1,19 @@
-import type { NextPage } from 'next'
+import React from 'react'
 import Head from 'next/head'
-import { PostCard, Categories, PostWidget, ScrollToTop } from '../components'
-import { getPosts } from '../services'
+import { ScrollToTop } from '../components'
+import Hero from '../components/Hero'
 
-const Home: NextPage = ({ posts }) => {
+const Homepage: NextPage = () => {
   return (
     <>
-      <div className="container mx-auto mb-8 px-10">
-        <Head>
-          <title>George Albu</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
-          <div className="col-span-1 lg:col-span-8 ">
-            {posts.map((post, index) => (
-              <PostCard post={post.node} key={post.title} />
-            ))}
-          </div>
-
-          <div className="col-span-1 lg:col-span-4">
-            <div className="relative top-8 lg:sticky">
-              <PostWidget />
-              <Categories />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Head>
+        <title>George Albu</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Hero />
       <ScrollToTop />
     </>
   )
 }
 
-export async function getStaticProps() {
-  const posts = (await getPosts()) || []
-  return {
-    props: { posts },
-  }
-}
-
-export default Home
+export default Homepage
