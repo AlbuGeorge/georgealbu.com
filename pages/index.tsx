@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { ScrollToTop } from '../components'
-import Hero from '../components/Hero'
+import { ScrollToTop, Hero, About } from '../components'
 
 const Homepage: NextPage = () => {
   return (
@@ -11,6 +10,7 @@ const Homepage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <About />
       <ScrollToTop />
     </>
   )

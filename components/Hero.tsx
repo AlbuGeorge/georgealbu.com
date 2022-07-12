@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsArrowRightShort } from 'react-icons/bs'
+import { BsArrowDownShort } from 'react-icons/bs'
 
 const Hero = () => {
   return (
@@ -26,23 +26,35 @@ const Hero = () => {
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <a
-                      href="#"
+                      href="/contact"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white dark:bg-white dark:text-black md:py-2 md:px-10 md:text-lg"
                     >
                       Contact
                     </a>
                   </div>
                 </div>
-                <div className="mt-36 flex flex-auto cursor-pointer md:mt-64">
+                <div
+                  onClick={() =>
+                    document.getElementById('about').scrollIntoView({
+                      behavior: 'smooth',
+                    })
+                  }
+                  className="mt-36 flex flex-auto cursor-pointer justify-center md:mt-64 lg:justify-start"
+                >
                   <p className="text-lg">Learn more about George</p>
-                  <BsArrowRightShort
-                    className="ml-4 hover:ml-4"
-                    size={'30px'}
-                  />
+                  <div className="">
+                    <BsArrowDownShort
+                      className="border-1 ml-4 animate-bounce rounded-full border-2 border-white hover:ml-4"
+                      size={'30px'}
+                    />
+                  </div>
                 </div>
               </div>
             </main>
           </div>
+        </div>
+        <div className="lg:absolute lg:inset-y-0 lg:right-0 ">
+          <img src="/bg1.png" alt="" />
         </div>
         {/* <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img

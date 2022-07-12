@@ -10,14 +10,14 @@ const IndexHeader = () => {
   ]
   return (
     <div className="container mx-auto">
-      <div className="px-12 py-6 lg:py-12">
-        <div className="text-primary max-w-8xl mx-auto flex items-center justify-between">
+      <div className="py-6 px-5 md:px-40 lg:py-8">
+        <div className="text-primary max-w-8xl op mx-auto flex items-center justify-between">
           <Link href="/">
             <span className="cursor-pointer text-3xl font-bold text-zinc-900 dark:text-white">
               George Albu
             </span>
           </Link>
-          <ul className="hidden lg:flex">
+          <ul className="-ml-12 hidden lg:flex">
             {LINKS.map((link) => (
               <Link href={link.to}>
                 <span className="mt-2 ml-12 cursor-pointer align-middle text-xl font-medium text-zinc-900 hover:text-gray-300 dark:text-white">
