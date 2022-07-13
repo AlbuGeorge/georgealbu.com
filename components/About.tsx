@@ -8,16 +8,15 @@ const About = () => {
         className="mx-auto max-w-7xl p-20 px-6 text-lg text-gray-900 md:px-12 xl:px-6"
       >
         <div className="gap-6 space-y-6 md:flex md:space-y-0 lg:items-center lg:gap-12">
-          <div className="md:5/12 object-contain lg:w-5/12">
-            <div className="jusitfy-center items-center">
-              <img
-                src="Avatar.png"
-                alt="image"
-                loading="lazy"
-                width="350"
-                height="350"
-              />
-            </div>
+          <div className="md:5/12 lg:w-5/12">
+            <img
+              className="mx-auto block"
+              src="Avatar.png"
+              alt="image"
+              loading="lazy"
+              width="350"
+              height="350"
+            />
           </div>
           <div className="md:7/12 lg:w-6/12">
             <h2 className="text-2xl font-bold text-indigo-600 md:text-4xl">

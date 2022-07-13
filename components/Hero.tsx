@@ -15,7 +15,7 @@ const Hero = () => {
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-8xl">
                   <span className="block xl:inline">George Albu</span>
                 </h1>
-                <h2 className="mt-3 text-xl font-extrabold text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-8 md:text-3xl lg:mx-0">
+                <h2 className="mt-3 text-xl font-extrabold text-gray-500 dark:text-gray-600 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-8 md:text-3xl lg:mx-0">
                   Self-taught{' '}
                   <span className="text-black dark:text-white">
                     Frontend Developer
@@ -53,7 +53,7 @@ const Hero = () => {
             </main>
           </div>
         </div>
-        <div className="hidden lg:absolute lg:inset-y-0 lg:right-0 lg:block ">
+        <div className="hidden lg:absolute lg:inset-y-0 lg:right-0 lg:block lg:min-h-screen ">
           <img src="/bg1.png" alt="" />
         </div>
         {/* <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
