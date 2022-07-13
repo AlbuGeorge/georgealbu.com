@@ -23,7 +23,7 @@ const Hero = () => {
                   <br />
                   School-taught Systems Engineer
                 </h2>
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                <div className="mt-10 sm:mt-16 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <a
                       href="/contact"
@@ -44,7 +44,7 @@ const Hero = () => {
                   <p className="text-lg">Learn more about George</p>
                   <div className="">
                     <BsArrowDownShort
-                      className="border-1 ml-4 animate-bounce rounded-full border-2 border-white hover:ml-4"
+                      className="border-1 ml-4 animate-bounce rounded-full border-2 border-black hover:ml-4 dark:border-white"
                       size={'30px'}
                     />
                   </div>
@@ -53,7 +53,7 @@ const Hero = () => {
             </main>
           </div>
         </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 ">
+        <div className="hidden lg:absolute lg:inset-y-0 lg:right-0 lg:block ">
           <img src="/bg1.png" alt="" />
         </div>
         {/* <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
