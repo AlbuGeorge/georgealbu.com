@@ -3,7 +3,12 @@ import Link from 'next/link'
 
 import { getCategories } from '../services'
 
-const Categories = () => {
+interface CategoriesProps {
+  category: any
+  slug: any
+}
+
+const Categories: React.FC<CategoriesProps> = () => {
   const [categories, setCategories] = useState([])
 
   useEffect(() => {
