@@ -26,7 +26,7 @@ const Hero = () => {
                 <div className="mt-10 sm:mt-16 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <a
-                      href="/contact"
+                      href="#contact"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white dark:bg-white dark:text-black md:py-2 md:px-10 md:text-lg"
                     >
                       Contact

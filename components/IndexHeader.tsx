@@ -6,7 +6,7 @@ const IndexHeader = () => {
   const LINKS = [
     { name: 'Blog', to: '/blog' },
     { name: 'Projects', to: '/projects' },
-    { name: 'Contact', to: '/contact' },
+    { name: 'Contact', to: '#contact' },
   ]
   return (
     <div className="container mx-auto">

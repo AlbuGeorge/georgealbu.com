@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { ScrollToTop, Hero, About, Projects } from '../components'
+import { ScrollToTop, Hero, About, Projects, Contact } from '../components'
 
 const Homepage: NextPage = () => {
   return (
@@ -12,6 +12,7 @@ const Homepage: NextPage = () => {
       <Hero />
       <About />
       <Projects />
+      <Contact />
       <ScrollToTop />
     </>
   )
