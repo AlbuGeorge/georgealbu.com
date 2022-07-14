@@ -5,7 +5,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className="mx-auto max-w-7xl p-20 px-6 text-lg text-gray-900 md:px-12 xl:px-6"
+        className="mx-auto max-w-7xl p-48 px-6 text-lg text-gray-900 md:px-12 xl:px-6"
       >
         <div className="gap-6 space-y-6 md:flex md:space-y-0 lg:items-center lg:gap-12">
           <div className="md:5/12 lg:w-5/12">

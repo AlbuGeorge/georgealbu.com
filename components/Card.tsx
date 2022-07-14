@@ -4,7 +4,7 @@ import { BsGithub, BsLink } from 'react-icons/bs'
 const Card = () => {
   return (
     <div className="flex">
-      <div className="rounded-lg bg-white shadow-lg dark:bg-slate-800">
+      <div className="rounded-lg bg-white shadow-lg dark:bg-zinc-900">
         <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
           <img
             className="rounded-t-lg"
