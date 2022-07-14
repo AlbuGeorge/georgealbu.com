@@ -5,8 +5,8 @@ const Hero = () => {
   return (
     <>
       <div className="relative overflow-hidden">
-        <div className="mx-auto max-w-7xl">
-          <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
+        <div className="mx-auto h-screen max-w-7xl">
+          <div className="relative z-10 pb-8  sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
             <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
                 <h2 className="block text-2xl font-extrabold tracking-tight text-indigo-600 lg:ml-2 xl:inline">

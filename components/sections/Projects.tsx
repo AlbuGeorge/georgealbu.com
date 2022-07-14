@@ -7,7 +7,7 @@ const Projects = () => {
     <>
       <div className="mx-auto max-w-7xl p-20 px-6 md:px-12 xl:px-6">
         <div className="py-10">
-          <div>
+          <div id="projects">
             <h2 className="mb-6 text-2xl font-bold text-indigo-600 md:text-4xl">
               My creative works.
             </h2>
@@ -21,9 +21,7 @@ const Projects = () => {
               </span>
             </a>
           </div>
-          <div className="grid grid-cols-1 grid-rows-2 gap-10 md:grid-cols-2">
-            <Card />
-            <Card />
+          <div className="grid grid-cols-1 grid-rows-1 gap-10 md:grid-cols-2">
             <Card />
             <Card />
           </div>
