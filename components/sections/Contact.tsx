@@ -13,7 +13,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-lg font-medium text-gray-700"
+                  className="block text-lg font-medium text-black dark:text-white"
                 >
                   Name
                 </label>
@@ -23,14 +23,14 @@ const Contact = () => {
                     type="text"
                     name="name"
                     id="name"
-                    className="block w-full rounded-md border-gray-300 p-3 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    className="block w-full rounded-md border border-solid border-gray-300 p-3 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                   />
                 </div>
               </div>
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-lg font-medium text-gray-700"
+                  className="block text-lg font-medium text-black dark:text-white"
                 >
                   Email
                 </label>
@@ -40,20 +40,20 @@ const Contact = () => {
                     type="email"
                     name="email"
                     id="email"
-                    className="block w-full rounded-md border-gray-300 p-3 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    className="block w-full rounded-md border border-solid border-gray-300 p-3 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                   />
                 </div>
               </div>
               <div className="col-span-2">
                 <label
                   htmlFor="message"
-                  className="block text-lg font-medium text-gray-700"
+                  className="block text-lg font-medium text-black dark:text-white"
                 >
                   Message
                 </label>
                 <div className="relative mt-1 rounded-md shadow-sm">
                   <textarea
-                    class="block w-full rounded-md border-gray-300 p-3 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    class="block w-full rounded-md border border-solid border-gray-300 p-3 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                     id="message"
                     rows="3"
                     placeholder="Message"
