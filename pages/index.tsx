@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Hero, About, Projects, Contact } from '../components'
+import { Hero, About, Projects } from '../components'
 
 const Homepage: NextPage = () => {
   return (
@@ -8,7 +8,6 @@ const Homepage: NextPage = () => {
       <Hero />
       <About />
       <Projects />
-      <Contact />
     </>
   )
 }

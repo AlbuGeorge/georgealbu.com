@@ -5,7 +5,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className="mx-auto max-w-7xl p-48 px-6 text-lg text-gray-900 md:px-12 xl:px-6"
+        className="mx-auto max-w-6xl p-48 px-6 text-lg text-gray-900 md:px-12 xl:px-6"
       >
         <div className="gap-6 space-y-6 md:flex md:space-y-0 lg:items-center lg:gap-12">
           <div className="md:5/12 lg:w-5/12">
@@ -32,12 +32,11 @@ const About = () => {
               Wordpress and from that, I explored how to code myself,
               fast-forward to today, I do programming in various languages and
               technologies. I'm interested in building something awesome with
-              code and automate tasks with code, currently focused on Web
-              Development.
+              code, currently focused on Web Development.
             </p>
             <p className="mt-4 text-gray-600 dark:text-gray-300">
               {' '}
-              When I'm not coding I like going to the gym, watch some show on
+              When I'm not coding I like going to the gym, watch some shows on
               Netflix, or if the weather's good, play different sports! 🏓🎾
             </p>
           </div>
