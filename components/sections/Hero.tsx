@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <>
       <div className="relative overflow-hidden">
-        <div className="mx-auto h-screen max-w-7xl">
+        <div className="mx-auto h-screen max-w-6xl">
           <div className="relative z-10 pb-8  sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
             <main className="mx-auto mt-10 max-w-7xl px-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
               <div className="sm:text-center lg:text-left">
@@ -26,10 +26,10 @@ const Hero = () => {
                 <div className="mt-10 sm:mt-16 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <a
-                      href="#contact"
+                      href="#"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white dark:bg-white dark:text-black md:py-2 md:px-10 md:text-lg"
                     >
-                      Contact
+                      Resume
                     </a>
                   </div>
                 </div>
