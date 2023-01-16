@@ -5,9 +5,9 @@ const Hero = () => {
   return (
     <>
       <div className="relative overflow-hidden">
-        <div className="mx-auto h-screen max-w-7xl">
+        <div className="mx-auto h-screen max-w-6xl">
           <div className="relative z-10 pb-8  sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
-            <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+            <main className="mx-auto mt-10 max-w-7xl px-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
               <div className="sm:text-center lg:text-left">
                 <h2 className="block text-2xl font-extrabold tracking-tight text-indigo-600 lg:ml-2 xl:inline">
                   Hi there!, I'm
@@ -26,10 +26,10 @@ const Hero = () => {
                 <div className="mt-10 sm:mt-16 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <a
-                      href="/contact"
+                      href="#"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white dark:bg-white dark:text-black md:py-2 md:px-10 md:text-lg"
                     >
-                      Contact
+                      Resume
                     </a>
                   </div>
                 </div>
@@ -39,7 +39,7 @@ const Hero = () => {
                       behavior: 'smooth',
                     })
                   }
-                  className="my-64 flex flex-auto cursor-pointer justify-center md:mb-0 md:mt-64 lg:justify-start"
+                  className="my-40 flex flex-auto cursor-pointer justify-center md:mb-0 md:mt-40 lg:justify-start"
                 >
                   <p className="text-lg">Learn more about George</p>
                   <div className="">
