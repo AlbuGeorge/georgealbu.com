@@ -1,4 +1,5 @@
 import React from 'react'
+import { NextPage } from 'next/types'
 
 import data from '../constants/data'
 import ProjectCard from '../components/ProjectCard'
@@ -14,7 +15,7 @@ const Projects: NextPage = () => {
       {/* Grid starts here */}
       <div className="bg-[#F1F1F1] dark:bg-zinc-900">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-6 py-20 pb-40 md:grid-cols-2">
-          {data.projects.map((proj, idx) => (
+          {data.projects.map((proj, _idx) => (
             <ProjectCard
               title={proj.title}
               link={proj.link}

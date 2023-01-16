@@ -1,8 +1,26 @@
 import { BsGithub } from 'react-icons/bs'
 
-const ProjectCard = ({ title, link, imgUrl, linkG }) => {
+interface cardProps {
+  title: string
+  link: string
+  imgUrl: string
+  linkG: string
+  isFutured?: boolean
+}
+
+const ProjectCard = ({
+  title,
+  link,
+  imgUrl,
+  linkG,
+}: cardProps): JSX.Element => {
   return (
-    <a href={link} className="block w-full shadow-2xl">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener"
+      className="block w-full shadow-2xl"
+    >
       <div className="relative overflow-hidden">
         <div className="h-72 object-cover">
           <img
