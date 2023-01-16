@@ -16,7 +16,7 @@ const data = {
     },
     {
       title: 'Finance App',
-      link: 'https://manuarora.in',
+      link: '',
       imgUrl: '/cms.png',
       githubUrl: 'https://github.com/AlbuGeorge/meme-generator',
       isFutured: false,
