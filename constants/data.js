@@ -15,9 +15,9 @@ const data = {
       isFutured: true,
     },
     {
-      title: 'Portfolio',
+      title: 'Finance App',
       link: 'https://manuarora.in',
-      imgUrl: '/portfolio.png',
+      imgUrl: '/cms.png',
       githubUrl: 'https://github.com/AlbuGeorge/meme-generator',
       isFutured: false,
     },
